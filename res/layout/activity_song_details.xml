@@ -1,0 +1,165 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="example.android.ait.hu.practiceroomassistant.SongDetailsActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:background="#78FFFFFF"
+        android:orientation="vertical"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:id="@+id/tvSongTitleDetail"
+        android:textSize="30sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etStatusPiece"
+            android:text="@string/curStatus"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10sp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvSongStatusDetail"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/etStatusPiece"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etStylePiece"
+            android:text="@string/pieceStyle"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10sp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvSongStyleDetail"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/etStylePiece"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etDetailsPiece"
+            android:text="@string/notes"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10sp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvSongNotesDetail"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/etDetailsPiece"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvConcertPiece"
+            android:text="To be performed on: "
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10sp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvSongDateDetail"
+            android:layout_toRightOf="@+id/tvConcertPiece"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forString"
+            android:id="@+id/tvFor"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10sp"
+            android:layout_marginLeft="10sp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvConcertDetail"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/tvFor"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTimeDetail"
+            android:text="@string/timePracticed"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10sp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTimeSpentDetail"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/tvTimeDetail"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

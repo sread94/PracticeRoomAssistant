@@ -1,0 +1,157 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="example.android.ait.hu.practiceroomassistant.MetronomeActivity"
+    android:orientation="vertical"
+    android:background="@drawable/music_bckgrnd_two">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:background="#78FFFFFF"
+        android:orientation="vertical"
+        >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+       android:id="@+id/llPlus"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_alignParentRight="true">
+
+       <Button
+           android:id="@+id/btnTempoPlus"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="+"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4sp"/>
+
+       <Button
+           android:id="@+id/btnBeatsPlus"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="+"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toLeftOf="@id/llPlus"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/tvTempoVal"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:gravity="center"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/tvBeatsVal"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toLeftOf="@id/llVal">
+
+        <Button
+            android:id="@+id/btnTempoMinus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="-"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4sp"/>
+
+        <Button
+            android:id="@+id/btnBeatsMinus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="-"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toLeftOf="@id/llMinus"
+            android:layout_alignParentLeft="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tempo:"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Beats:"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:textSize="20sp"
+                android:paddingBottom="@dimen/activity_vertical_margin"/>
+
+            </LinearLayout>
+
+
+</RelativeLayout>
+
+    <Button
+        android:id="@+id/btnStartMetronome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Metronome"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:gravity="center">
+
+       <TextView
+           android:id="@+id/tvBeatNumber"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="60dp"
+           android:gravity="center"/>
+
+       </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>
