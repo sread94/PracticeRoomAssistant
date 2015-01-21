@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/music_bckgrnd_two">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#78FFFFFF"
+        android:orientation="vertical"
+        >
+
+    <TextView
+        android:id="@+id/tvRecordingLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text=""/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter File Name Here"
+        android:id="@+id/etRecordingName"/>
+
+    <Button
+        android:id="@+id/startRecordingButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/startRecording"
+        />
+    <Button
+        android:id="@+id/stopRecordingButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/stopRecording"
+        />
+    <Button
+        android:id="@+id/startPlayingButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/startPlaying"
+        />
+    <Button
+        android:id="@+id/stopPlayingButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/stopPlaying"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnCancelRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel"/>
+
+        <Button
+            android:id="@+id/btnSubmitRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save"/>
+
+        </LinearLayout>
+
+
+
+</LinearLayout>
+</LinearLayout>
