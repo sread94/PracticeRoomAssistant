@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="example.android.ait.hu.practiceroomassistant" >
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/treble_clef"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:name="com.orm.SugarApp"
+        tools:replace="android:icon,android:theme">
+
+        <meta-data android:name="DATABASE" android:value="app_classes.db" />
+        <meta-data android:name="VERSION" android:value="7" />
+        <meta-data android:name="QUERY_LOG" android:value="true" />
+        <meta-data android:name="DOMAIN_PACKAGE_NAME"
+            android:value="example.android.ait.hu.practiceroomassistant.data" />
+
+        <activity
+            android:name=".SongListActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SongDetailsActivity"
+            android:label="@string/title_activity_song_details" >
+        </activity>
+        <activity
+            android:name=".MetronomeActivity"
+            android:label="@string/title_activity_metronome" >
+        </activity>
+        <activity
+            android:name=".ChooseWebURL"
+            android:label="Web" >
+        </activity>
+        <activity
+            android:name=".ViewUserURL"
+            android:label="Web" >
+        </activity>
+        <activity
+            android:name=".CreateNewRecordingActivity"
+            android:label="Record" >
+        </activity>
+        <activity
+            android:name=".ReminderActivity"
+            android:label="Reminders" >
+        </activity>
+
+
+        <receiver android:name=".broadcastreciever.ReceiveOnBoot"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".broadcastreciever.NotificationBroadcastReciever"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.time_tick"/>
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".service.NotificationService"/>
+
+    </application>
+
+</manifest>
